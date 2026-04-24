@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Advanced Wealth Tracker</string>
+    <string name="cd_tabs">Main navigation tabs</string>
+
+    <string name="input_title">Input Finance Data</string>
+    <string name="hint_income">Income</string>
+    <string name="hint_expenses">Expenses</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_clear">Clear</string>
+    <string name="saved_successfully">Saved. Opening Analytics.</string>
+    <string name="cleared_successfully">Cleared. Analytics reset.</string>
+    <string name="error_income_required">Please enter valid income</string>
+    <string name="error_expenses_required">Please enter valid expenses</string>
+
+    <string name="analytics_title">Analytics</string>
+    <string name="analytics_hint">Use tabs above to move between screens.</string>
+    <string name="label_income">Income</string>
+    <string name="label_expenses">Expenses</string>
+    <string name="label_net_income">Net Income (Income - Expenses)</string>
+    <string name="label_k">K Coefficient</string>
+    <string name="label_final_savings">Final Savings</string>
+
+    <string name="profile_title">Profile</string>
+    <string name="label_name">Name</string>
+    <string name="label_surname">Surname</string>
+    <string name="label_birth_day">Birth Date</string>
+</resources>
