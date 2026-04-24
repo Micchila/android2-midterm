@@ -1,3 +1,5 @@
+# android2-midterm
+
 #მიმდინარე მნიშვნელობები:
 name = Nikoloz (7), surname = Michilashvili (13), birth day = 24
 
