@@ -23,10 +23,10 @@ class InputFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val incomeEditText = view.findViewById<TextInputEditText>(R.id.nk_ol_et_income)
-        val expensesEditText = view.findViewById<TextInputEditText>(R.id.nk_ol_et_expenses)
-        val saveButton = view.findViewById<MaterialButton>(R.id.nk_ol_btn_save)
-        val clearButton = view.findViewById<MaterialButton>(R.id.nk_ol_btn_clear)
+        val incomeEditText = view.findViewById<TextInputEditText>(R.id.nm_li_et_income)
+        val expensesEditText = view.findViewById<TextInputEditText>(R.id.nm_li_et_expenses)
+        val saveButton = view.findViewById<MaterialButton>(R.id.nm_li_btn_save)
+        val clearButton = view.findViewById<MaterialButton>(R.id.nm_li_btn_clear)
 
         saveButton.setOnClickListener {
             val incomeText = incomeEditText.text?.toString()?.trim().orEmpty()

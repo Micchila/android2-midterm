@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Advanced Wealth Tracker</string>
     <string name="cd_tabs">Main navigation tabs</string>
+    <string name="tab_input">Input</string>
+    <string name="tab_analytics">Analytics</string>
+    <string name="tab_profile">Profile</string>
 
     <string name="input_title">Input Finance Data</string>
     <string name="hint_income">Income</string>

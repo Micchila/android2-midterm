@@ -18,8 +18,8 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<TextView>(R.id.nk_ol_tv_name_value).text = StudentIdentity.FULL_NAME
-        view.findViewById<TextView>(R.id.nk_ol_tv_surname_value).text = StudentIdentity.SURNAME
-        view.findViewById<TextView>(R.id.nk_ol_tv_birth_day_value).text = StudentIdentity.BIRTH_DATE
+        view.findViewById<TextView>(R.id.nm_li_tv_name_value).text = StudentIdentity.FULL_NAME
+        view.findViewById<TextView>(R.id.nm_li_tv_surname_value).text = StudentIdentity.SURNAME
+        view.findViewById<TextView>(R.id.nm_li_tv_birth_day_value).text = StudentIdentity.BIRTH_DATE
     }
 }

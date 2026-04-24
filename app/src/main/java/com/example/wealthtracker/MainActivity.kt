@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val root = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.nk_ol_cl_main)
-        viewPager = findViewById(R.id.nk_ol_vp_main)
-        tabLayout = findViewById(R.id.nk_ol_tl_main)
+        val root = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.nm_li_cl_main)
+        viewPager = findViewById(R.id.nm_li_vp_main)
+        tabLayout = findViewById(R.id.nm_li_tl_main)
 
         ViewCompat.setOnApplyWindowInsetsListener(root) { view, insets ->
             val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -42,7 +42,11 @@ class MainActivity : AppCompatActivity() {
             ORIENTATION_VERTICAL
         }
 
-        val tabTitles = listOf("Input", "Analytics", "Profile")
+        val tabTitles = listOf(
+            getString(R.string.tab_input),
+            getString(R.string.tab_analytics),
+            getString(R.string.tab_profile)
+        )
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = tabTitles[position]
         }.attach()

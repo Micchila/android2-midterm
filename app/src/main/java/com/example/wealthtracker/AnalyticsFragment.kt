@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import java.util.Locale
 
 class AnalyticsFragment : Fragment() {
 
@@ -44,17 +45,17 @@ class AnalyticsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val kValue = wealthManager.calculateK()
-        view.findViewById<TextView>(R.id.nk_ol_tv_k_value).text = kValue.toString()
+        view.findViewById<TextView>(R.id.nm_li_tv_k_value).text = kValue.toString()
         latestReport?.let { renderReport(view, it) }
     }
 
-    private fun formatMoney(value: Double): String = String.format("%.2f", value)
+    private fun formatMoney(value: Double): String = String.format(Locale.US, "%.2f", value)
 
     private fun renderReport(root: View, report: WealthManager.WealthReport) {
-        root.findViewById<TextView>(R.id.nk_ol_tv_income_value).text = formatMoney(report.income)
-        root.findViewById<TextView>(R.id.nk_ol_tv_expenses_value).text = formatMoney(report.expenses)
-        root.findViewById<TextView>(R.id.nk_ol_tv_net_value).text = formatMoney(report.netIncome)
-        root.findViewById<TextView>(R.id.nk_ol_tv_k_value).text = report.kCoefficient.toString()
-        root.findViewById<TextView>(R.id.nk_ol_tv_final_value).text = formatMoney(report.finalSavings)
+        root.findViewById<TextView>(R.id.nm_li_tv_income_value).text = formatMoney(report.income)
+        root.findViewById<TextView>(R.id.nm_li_tv_expenses_value).text = formatMoney(report.expenses)
+        root.findViewById<TextView>(R.id.nm_li_tv_net_value).text = formatMoney(report.netIncome)
+        root.findViewById<TextView>(R.id.nm_li_tv_k_value).text = report.kCoefficient.toString()
+        root.findViewById<TextView>(R.id.nm_li_tv_final_value).text = formatMoney(report.finalSavings)
     }
 }

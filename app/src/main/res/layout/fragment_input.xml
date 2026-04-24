@@ -2,14 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nk_ol_cl_input"
+    android:id="@+id/nm_li_cl_input"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
     tools:context=".InputFragment">
 
     <TextView
-        android:id="@+id/nk_ol_tv_input_title"
+        android:id="@+id/nm_li_tv_input_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/input_title"
@@ -21,51 +21,51 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/nk_ol_til_income"
+        android:id="@+id/nm_li_til_income"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:hint="@string/hint_income"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nk_ol_tv_input_title">
+        app:layout_constraintTop_toBottomOf="@id/nm_li_tv_input_title">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nk_ol_et_income"
+            android:id="@+id/nm_li_et_income"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/nk_ol_til_expenses"
+        android:id="@+id/nm_li_til_expenses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="@string/hint_expenses"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nk_ol_til_income">
+        app:layout_constraintTop_toBottomOf="@id/nm_li_til_income">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nk_ol_et_expenses"
+            android:id="@+id/nm_li_et_expenses"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/nk_ol_btn_save"
+        android:id="@+id/nm_li_btn_save"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/btn_save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nk_ol_til_expenses" />
+        app:layout_constraintTop_toBottomOf="@id/nm_li_til_expenses" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/nk_ol_btn_clear"
+        android:id="@+id/nm_li_btn_clear"
         style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -73,6 +73,6 @@
         android:text="@string/btn_clear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nk_ol_btn_save" />
+        app:layout_constraintTop_toBottomOf="@id/nm_li_btn_save" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

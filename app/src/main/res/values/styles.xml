@@ -1,5 +1,5 @@
 <resources>
-    <style name="NkOlTabText" parent="TextAppearance.Material3.LabelLarge">
+    <style name="NmLiTabText" parent="TextAppearance.Material3.LabelLarge">
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
     </style>
